@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const {Sequelize, DataTypes} = require('sequelize');
 require(dotenv).config();
 
-const sequelize = new Sequelize(process.env.DbName, process.env.user, process.envp.assword, {
+const sequelize = new Sequelize(process.env.DbName, process.env.user, process.env.password, {
     dialect: 'mysql',
     host: 'localhost',
   });
